@@ -1,0 +1,38 @@
+.about-button {
+  position: relative;
+  transition: transform 0.3s ease;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.about-button:hover {
+  animation: bounce-away 0.6s forwards;
+}
+
+.about-button::before {
+  content: "🚀";
+  position: absolute;
+  right: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: opacity 0.3s, right 0.6s;
+}
+
+.about-button:hover::before {
+  opacity: 1;
+  right: 100%;
+}
+
+@keyframes bounce-away {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(-10px) translateY(-4px) rotate(-5deg);
+  }
+  100% {
+    transform: translateX(150%) rotate(25deg);
+    opacity: 0;
+  }
+}
