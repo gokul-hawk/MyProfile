@@ -10,7 +10,7 @@ const Hero = () => {
         Hi, I'm <span className="text-purple-400">GOKULAUDHAYAN V</span>
       </h1>
       <p className="text-gray-300 max-w-xl text-lg md:text-xl mb-6">
-        I build beautiful UIs, smart apps, and seamless digital experiences.
+        I Learn Things out of curiousity and forgert in a week😅 , But still like to learn from scratch["HELLO WORLD!"]
       </p>
       <div className="space-x-4">
         <a
